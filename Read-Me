@@ -1,0 +1,12 @@
+In this project, I applied SQL skills to perform a complete end-to-end analysis of Walmart’s sales dataset. The work began with database creation and table design using CREATE DATABASE and CREATE TABLE statements to define appropriate data types, constraints, and a primary key. I then utilized the LOAD DATA LOCAL INFILE command to efficiently import the CSV dataset into MySQL, ensuring correct field delimiters and formatting.
+
+Next, I applied feature engineering within SQL to enrich the dataset. I created new derived columns such as time_of_day, day_name, and month_name using conditional CASE statements and built-in date functions like DAYNAME() and MONTHNAME(). This step allowed for deeper time-based sales analysis without relying on external tools.
+
+For Exploratory Data Analysis (EDA), I wrote queries to uncover trends, patterns, and performance metrics. This included identifying the most common payment methods, best-selling product lines, highest-revenue cities, and top-performing months. I used GROUP BY, aggregate functions (SUM, COUNT, AVG), and ordering to rank results meaningfully. I also implemented comparative queries to classify products as “Good” or “Bad” based on sales performance relative to the average.
+
+The sales analysis section focused on time-segmented sales patterns, revealing which parts of the day and which weekdays were most profitable. I further analyzed VAT contributions, customer type revenue shares, and city-wise tax patterns.
+
+For customer analysis, I extracted demographic insights such as gender distribution per branch, most frequent customer types, and rating trends across time and days. This was done using window functions like AVG() OVER(PARTITION BY …) alongside standard aggregation.
+
+Overall, this project demonstrated my ability to structure, clean, enrich, and analyze data purely using SQL, translating raw transactional records into actionable business insights that can guide decision-making.
+
